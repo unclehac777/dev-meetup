@@ -1,11 +1,17 @@
 <template>
-  <v-app >
+  <v-app>
+    
+    <NavBar />
     <v-main>
-      <RouterView />
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
-<script setup>
-  //
+<script>
+import NavBar from '@/components/NavBar.vue';
+
 </script>
+
+<style>
+</style>
