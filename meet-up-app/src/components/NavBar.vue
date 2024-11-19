@@ -6,7 +6,6 @@
           <v-list-item
             v-for="item in menuItems"
             :key="item.title"
-            router
             :to="item.link"
           >
             <v-list-item-icon>
@@ -29,8 +28,8 @@
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="d-none d-sm-flex" >
-          <v-btn v-for="item in menuItems" :key="item.title" router :to="item.link" flat>
-            <v-icon left dark>{{ item.icon }}</v-icon>
+          <v-btn v-for="item in menuItems" :key="item.title" :to="item.link" flat>
+            <v-icon >{{ item.icon }}</v-icon>
             {{ item.title }}
           </v-btn>
         </v-toolbar-items>
