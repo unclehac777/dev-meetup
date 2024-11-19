@@ -20,7 +20,7 @@
                 </div>
               </v-card-title>
               <v-card-actions>
-                <v-btn text color="primary" :to="{ path: '/meetups/1' }">
+                <v-btn text color="primary" :to="{ path: '/see-meetups/:id' }">
                   <v-icon left>mdi-arrow-forward</v-icon>
                   View Meetup
                 </v-btn>

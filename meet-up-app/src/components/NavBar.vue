@@ -22,7 +22,7 @@
       <v-app-bar app color="lime lighten-2">
         <v-app-bar-nav-icon class="d-sm-none" @click.stop="toggleDrawer"></v-app-bar-nav-icon>
         <v-toolbar-title >
-          <router-link to="/" tag="span" style="cursor: pointer;">
+          <router-link to="/" tag="span" style="cursor: pointer;" class="no-underline">
             DevMeetup
           </router-link>         
         </v-toolbar-title>
@@ -65,6 +65,7 @@
   </script>
   
   <style>
-  /* Add any custom styles here */
+.no-underline { text-decoration: none;  }
+
   </style>
   
